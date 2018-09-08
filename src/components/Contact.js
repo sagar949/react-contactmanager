@@ -14,7 +14,7 @@ export default class Contact extends Component {
 
   onShowClick = event => {
     // event.preventDefault();
-    // this.setState({ showContactInfo: !this.state.showContactInfo });
+    this.setState({ showContactInfo: !this.state.showContactInfo });
     // //console.log(event.target);
   };
 

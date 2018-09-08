@@ -7,7 +7,7 @@ const reducer = (state, action) => {
     case 'DELETE_CONTACT':
       return {
         ...state,
-        contacts: state.contacts.filter(c => c.id !== action.payload)
+        contacts: state.contacts.filter(c => c.id !== action.payload) // Payload is id
       };
     default:
       return state;
