@@ -18,20 +18,30 @@ export default class Contacts extends Component {
       },
       {
         id: 3,
-        name: 'Alex',
-        email: 'alex@gmail.com',
+        name: 'Shiva',
+        email: 'shiva@gmail.com',
         phone: '333-333-3333'
       }
     ]
   };
+
+  deleteContact = id => {
+    const { contacts } = this.state;
+    const newContacts = contacts.filter(c => c.id !== id);
+    this.setState({ contacts: newContacts });
+  };
   render() {
     const { contacts } = this.state;
     return (
-      <div>
+      <React.Fragment>
         {contacts.map(contact => (
-          <Contact key={contact.id} contact={contact} />
+          <Contact
+            key={contact.id}
+            contact={contact}
+            deleteClickHandler={this.deleteContact.bind(this, contact.id)}
+          />
         ))}
-      </div>
+      </React.Fragment>
     );
   }
 }
