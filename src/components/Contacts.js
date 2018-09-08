@@ -19,7 +19,7 @@ export default class Contacts extends Component {
                 <Contact
                   key={contact.id}
                   contact={contact}
-                  deleteClickHandler={this.deleteContact.bind(this, contact.id)}
+                  //   deleteClickHandler={this.deleteContact.bind(this, contact.id)}
                 />
               ))}
             </React.Fragment>
