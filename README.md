@@ -1,3 +1,4 @@
+[![Build status](https://vidya949.visualstudio.com/react-contactmanager/_apis/build/status/react-contactmanager-CI)](https://vidya949.visualstudio.com/react-contactmanager/_build/latest?definitionId=1)
 
 See this in Live -[Here](https://build-auiyzyqmjj.now.sh)
 
